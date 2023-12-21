@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/estado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ver estado almacenamiento externo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp">
+    </Button>
+
+    <EditText
+        android:id="@+id/textSave"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Texto a guardar"
+        android:layout_below="@+id/estado"
+        android:layout_margin="30dp">
+    </EditText>
+
+    <LinearLayout
+        android:id="@+id/linearBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textSave"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp">
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Añadir al fichero"
+            android:layout_margin="10dp">
+        </Button>
+        
+        <Button
+            android:id="@+id/ver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ver fichero"
+            android:layout_margin="10dp">
+        </Button>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mover fichero a..."
+        android:layout_below="@+id/linearBox"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"/>
+
+    <LinearLayout
+        android:id="@+id/linearBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp">
+
+        <Button
+            android:id="@+id/external"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="External storage"
+            android:layout_margin="10dp">
+        </Button>
+
+        <Button
+            android:id="@+id/internal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Internal Storage"
+            android:layout_margin="10dp">
+        </Button>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/cerrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cerrar"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp">
+    </Button>
+
+</RelativeLayout>
